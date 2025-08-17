@@ -33,7 +33,7 @@ const Home = () => {
             <div className=' flex justify-center items-center container  '>
                 {/* passing the props to the children component */}
                 {blogs && <BlogList blogs={blogs} title='All Blogs!' handleDelete={handleDelete} />}
-                {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')} title= "Mario's Blogs" /> */}
+                <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')} title= "Mario's Blogs" />
                 {/* <BlogList blogs={blogs.filter((blog) => blog.image === 'mario')} title= "Mario's Blogs" /> */}
             </div>
       
