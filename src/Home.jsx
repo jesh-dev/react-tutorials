@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import BlogList from './Bloglist';
-import avigail from './assets/avigail.jpg'
-import bave from './assets/bave.jpg'
-import good from './assets/good.jpg'
+
 
 // // Parent conponent, passing props from the parent component to the child component to make a reusable blog list.
 const Home = () => {

@@ -1,15 +1,19 @@
+
+
 {
     "blogs": [
         {
             "title": "My First Blog",
             "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted",
             "author": "mario",
+            "image": "assets/good.jpg",
             "id": 1
         },
         {
             "title": "Opening Party",
-            "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted",
-            "author": "yoshi",
+            "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted, how will that be justified if there's no way we could eliminate such enterprises in schools and other communitiy practices, when will we be able to understand that there are forces flowing around, when will we understand. The importance of addressing these issues cannot be overstated, as they impact not only individual growth but also the collective progress of our communities. By fostering awareness and encouraging open dialogue, we can begin to dismantle barriers and create environments where everyone has the opportunity to thrive.",
+                "author": "yoshi",
+                "image": "img_placeholder2",
             "id": 2
         }
     ]
