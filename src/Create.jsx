@@ -1,0 +1,9 @@
+const Create = () => {
+    return ( 
+        <div>
+            <h2 className="text-3xl font-bold">Create a new blog post</h2>
+        </div>
+     );
+}
+ 
+export default Create;

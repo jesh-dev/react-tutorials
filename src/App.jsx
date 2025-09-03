@@ -1,5 +1,8 @@
+import Create from './Create';
 import Home from './Home';
 import Navbar from './Navbar';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+
 const App = () => {
   const title = "Welcome to new Blog site";
   const likes = 50;
@@ -7,13 +10,17 @@ const App = () => {
 
   return ( 
     <>
-    <div className="App m-auto ">
-      <Navbar/>
-      <div className="content bg-gradient-to-tl from-pink-600 to-white  p-[20px]">
-        {/* <h1 className="text-3xl font-bold flex justify-center align-middle text-red-500">{title}</h1> */}
-        <Home/>
+    <Router>
+      <div className="App m-auto ">
+        <Navbar/>
+        <div className="content bg-gradient-to-tl from-pink-600 to-white  p-[20px]">
+          <Routes>
+           <Route path="/" element={<Home/>} />
+           <Route path="/create" element={<Create/>} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
     </>
    );
 }
