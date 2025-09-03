@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 // // child component receiving the props from the parent component to use the blog list
-const BlogList = ({ blogs, title, handleDelete }) => { // <-- shorthand props, handleDelete is a function as props been passed from the Parent component.
+const BlogList = ({ blogs, title,  }) => { // <-- shorthand props, handleDelete is a function as props been passed from the Parent component.
 
   // const blogs = props.blogs;
   // const title = props.title;
@@ -21,20 +21,20 @@ const BlogList = ({ blogs, title, handleDelete }) => { // <-- shorthand props, h
               <p className="mb-3">Written by {blog.author}</p>
               {/* Making use of the handleDelete props to make the button function  */}
               <button
-                onClick={() => handleDelete(blog.id)}
+                 
                 className="border p-1 rounded-xl cursor-pointer hover:shadow-md duration-500 hover:shadow-pink-500 bg-pink-600 mb-3 text-white hover:text-pink-500 hover:bg-white transition "
               >
                 Delete blog
               </button>
             </div>
-            <div>
+            {/* <div>
               <img
                 className=" pt-5 w-30 max-sm:w-20 xl:rounded-b-full lg:rounded-e-full max-md:rounded-bl-full max-sm:rounded-e-full mb-3"
                 src={blog.image}
                 alt=""
                 srcset=""
               />
-            </div>
+            </div> */}
           </div>
         </div>
       ))}
